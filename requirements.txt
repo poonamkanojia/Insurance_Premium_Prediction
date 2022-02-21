@@ -7,4 +7,3 @@ seaborn
 pandas
 sklearn
 statsmodels
-numpy
