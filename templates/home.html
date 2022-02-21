@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Insurance Premium Predictions</title>
+</head>
+<style>
+html {
+height: 100%;
+}
+body  {
+  background-image: linear-gradient(to bottom right, #99CCFF, #CCFF99);
+}
+
+.result {
+    margin: auto;
+    width: 35%;
+    border: 2px groove;
+}
+</style>
+<body>
+<div class="predict">
+<h1 style="margin: auto; width: 35%; padding: 1%; text-align: center;">Insurance Premium Prediction </h1>
+<form action='/predict' method="post">
+	<fieldset style="float:left;height: 400px;width: 1200px">
+		<div>
+            <label for="age" style="font-size: 20px"><b>Age</b></label>
+            <br>
+            <input name="age" type="text" id = 'age' placeholder="in years" required="required">
+        </div>
+		<br>
+		<label style="font-size: 20px"><b>Gender</b></label>
+		<br>
+		<input type="radio" id="male" name="gender" value="0" required="required" />
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="1" required="required" />
+		<label for="female">Female</label>
+		<br>
+		<br>
+		<div>
+            <label for="bmi" style="font-size: 20px"><b>BMI</b></label>
+              <br>
+            <input name="bmi" placeholder="BMI...as eg: 27.9"  id = 'bmi' type="text" required="required">
+        </div>
+		<br>
+		<div>
+            <label for="children" style="font-size: 20px"><b>Childrens</b></label>
+              <br>
+            <input id="children" name="children" placeholder="0 for None"  type="text" required="required">
+		</div>
+		<br>
+		<div>
+            <label style="font-size: 20px"><b>Do you Smoke?</b></label>
+            <br>
+			<input type="radio" id="Yes" name="smoke" value="1" required="required" />
+			<label for="Yes">Yes</label>
+			<input type="radio" id="No" name="smoke" value="0" required="required" />
+			<label for="No">No</label>
+        </div>
+		<br>
+		<div>
+            <label style="font-size: 20px"><b>Which Region?</b></label>
+            <br>
+			<input type="radio" id="NorthWest" name="region" value="0" required="required" />
+			<label for="NorthWest">NorthWest</label>
+			<br>
+			<input type="radio" id="NorthEast" name="region" value="1" required="required" />
+			<label for="NorthEast">NorthEast</label>
+			<br>
+			<input type="radio" id="SouthEast" name="region" value="2" required="required" />
+			<label for="SouthEast">SouthEast</label>
+			<br>
+			<input type="radio" id="SouthWest" name="region" value="3" required="required" />
+			<label for="SouthWest">SouthWest</label>
+        </div>
+		<br>
+		<br>
+		</fieldset>
+		<br>
+	<br>
+	<br>
+	<div style="text-align:center;">
+		<button type="submit"><b>Predict</b></button>
+	</div>
+	</form>	
+		
+	
+</div>
+</body>
+</html>
