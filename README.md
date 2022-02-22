@@ -1,6 +1,6 @@
 # Insurance_Premium_Prediction
 
-ML MODEL DEPLYMENT USING HEROKU
+ML MODEL DEPLOYMENT USING HEROKU
 
 link : https://medicalpremiumpredict.herokuapp.com/
 
