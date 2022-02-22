@@ -22,6 +22,10 @@ Model Building : In this step, first dataset Splitting is done. After that model
 3) Random Forest Regressor
 4) Gradient Boosting Regressor
 5) Support Vector Reressor
-Model Selection : Tested all the models to check the RMSE, R-squared and Cross Validation Score.
+
+Model Selection : 
+Tested all the models to check the RMSE, R-squared and Cross Validation Score.
+
 Pickle File : Selected model as per best RMSE score, R-squared, Cross Validation Score and created pickle file using pickle library.
+
 Webpage and Deployment : Created a web application that takes all the necessary inputs from the user & shows the output. Then deployed project on the Heroku Platform.
